@@ -3,306 +3,510 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amelia Renata Lumbanbatu | Portofolio & Layanan</title>
-  <!-- Menghubungkan CSS Eksternal -->
-  <link rel="stylesheet" href="style.css">
+  <title>Amelia Renata Lumbanbatu | Portofolio & Layanan Bootstrap 5</title>
+  
+  <!-- Bootstrap 5.3.3 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
   <!-- Google Fonts: Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Custom Overrides CSS (Dimuat SETELAH Bootstrap) -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- HEADER & NAVBAR -->
-  <header class="navbar">
-    <div class="container nav-container">
-      <a href="#home" class="nav-logo">Amelia<span>Renata</span></a>
-      <nav class="nav-links" aria-label="Navigasi Utama">
-        <a href="#tentang">Tentang Saya</a>
-        <a href="#proyek">Portofolio Proyek</a>
-        <a href="#keahlian">Keahlian</a>
-        <a href="#layanan">Layanan & Kontak</a>
-      </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">Amelia<span class="text-primary">Renata</span></a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link active" href="#home">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyek">Portofolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#keahlian">Keahlian</a></li>
+          <li class="nav-item"><a class="nav-link" href="#layanan">Layanan & Kontak</a></li>
+        </ul>
+      </div>
     </div>
-  </header>
+  </nav>
 
   <main>
     <!-- HERO SECTION -->
-    <section id="home" class="hero">
-      <div class="container hero-container">
-        <div class="hero-content">
-          <div class="badge-status">
-            <span class="dot-active"></span> S1 Sistem Informasi 2024 • IT Del
+    <section id="home" class="py-5 bg-hero">
+      <div class="container py-4">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <div class="d-inline-flex align-items-center gap-2 badge-status mb-3">
+              <span class="dot-active"></span>
+              <span>S1 Sistem Informasi 2024 • IT Del</span>
+            </div>
+            <h1 class="display-5 fw-bold mb-3">Halo Semua 👋,<br>Saya <span class="text-primary">Amelia Renata Lumbanbatu</span></h1>
+            <p class="lead text-muted mb-4">
+              Mahasiswa Sistem Informasi Institut Teknologi Del dengan fokus dan minat utama pada <strong>Software Engineering</strong>, <strong>Database Administration</strong>, serta <strong>UI/UX Research & Design</strong>.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#layanan" class="btn btn-primary btn-lg rounded-3 px-4">Pesan Layanan / Konsultasi</a>
+              <a href="https://www.linkedin.com/in/amelia-renata-lumbanbatu-867936364" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark btn-lg rounded-3 px-4">
+                <i class="bi bi-linkedin me-1"></i> LinkedIn Profile
+              </a>
+            </div>
           </div>
-          <h1 class="hero-title">Halo Semua 👋,<br>Saya <span class="highlight">Amelia Renata Lumbanbatu</span></h1>
-          <p class="hero-subtitle">
-            Mahasiswa Sistem Informasi Institut Teknologi Del dengan fokus dan minat utama pada <strong>Software Engineering</strong>, <strong>Database Administration</strong>, serta <strong>UI/UX Research & Design</strong>.
-          </p>
-
-          <div class="hero-buttons">
-            <a href="#layanan" class="btn btn-primary">Pesan Layanan / Konsultasi</a>
-            <a href="https://www.linkedin.com/in/amelia-renata-lumbanbatu-867936364" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-              LinkedIn Profile ↗
-            </a>
-          </div>
-        </div>
-
-        <div class="hero-profile">
-          <article class="profile-card">
-            <div class="profile-img-box">
-  <img src="foto-amel.jpg" alt="Foto Amelia Renata Lumbanbatu" class="profile-img">
-</div>
-            <div class="profile-info">
-              <h3>Amelia Renata</h3>
-              <p class="role">Information Systems Student</p>
-              <p class="location">Institut Teknologi Del, Sumatera Utara</p>
-              <div class="profile-stats">
-                <div class="stat-box">
-                  <span class="stat-num">4+</span>
-                  <span class="stat-label">Proyek Inti</span>
-                </div>
-                <div class="stat-box">
-                  <span class="stat-num">3</span>
-                  <span class="stat-label">Spesialisasi</span>
+          
+          <div class="col-lg-5">
+            <div class="card card-custom border-0 shadow-lg overflow-hidden">
+              <div class="ratio ratio-4x3">
+                <img src="foto-amel.jpg" alt="Foto Amelia Renata Lumbanbatu" class="object-fit-cover">
+              </div>
+              <div class="card-body p-4 text-center">
+                <h3 class="h4 fw-bold mb-1">Amelia Renata</h3>
+                <p class="text-primary fw-semibold mb-1">Information Systems Student</p>
+                <p class="text-muted small mb-3"><i class="bi bi-geo-alt-fill text-danger me-1"></i>Institut Teknologi Del, Sumatra Utara</p>
+                <div class="row g-2 pt-2 border-top">
+                  <div class="col-6">
+                    <div class="p-2 bg-light rounded-3">
+                      <div class="h5 fw-bold mb-0">4+</div>
+                      <small class="text-muted">Proyek Inti</small>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="p-2 bg-light rounded-3">
+                      <div class="h5 fw-bold mb-0">3</div>
+                      <small class="text-muted">Spesialisasi</small>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </article>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- SECTION 1: TENTANG SAYA -->
-    <section id="tentang" class="section bg-light">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Tentang Saya</h2>
-          <p class="section-subtitle">Latar belakang akademik dan pembagian fokus minat teknologi saya.</p>
+    <section id="tentang" class="py-5 bg-light">
+      <div class="container py-4">
+        <div class="text-center mx-auto mb-5" style="max-width: 650px;">
+          <h2 class="fw-bold">Tentang Saya</h2>
+          <p class="text-muted">Latar belakang akademik dan pembagian fokus minat teknologi saya.</p>
         </div>
 
-        <div class="about-grid">
-          <div class="card about-card">
-            <h3 class="card-title">Identitas Akademik</h3>
-            <ul class="info-list">
-              <li><strong>Nama Lengkap:</strong> Amelia Renata Lumbanbatu</li>
-              <li><strong>Program Studi:</strong> S1 Sistem Informasi (2024)</li>
-              <li><strong>Institusi:</strong> Institut Teknologi Del</li>
-              <li><strong>Lokasi:</strong> Sitoluama, Laguboti, Toba, Sumut</li>
-            </ul>
-          </div>
-
-          <div class="card about-card">
-            <h3 class="card-title">Fokus & Minat Utama</h3>
-            <ol class="ordered-list">
-              <li>
-                <strong>Software Engineering:</strong>
-                <p>Pengembangan aplikasi terstruktur menggunakan Java (JDBC, JCF) dan C (Memory Management).</p>
-              </li>
-              <li>
-                <strong>Database Administration:</strong>
-                <p>Manajemen RDBMS MySQL (XAMPP) & SQL Server (Triggers, Stored Procedures, Audit Logging).</p>
-              </li>
-              <li>
-                <strong>UI/UX Research & Design:</strong>
-                <p>Riset pengalaman pengguna, wireframing, prototyping, dan pengujian kuantitatif (Maze & SUS).</p>
-              </li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 2: REKAPITULASI PROYEK (TABEL SEMANTIK & CARDS) -->
-    <section id="proyek" class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Portofolio Proyek & Kontribusi</h2>
-          <p class="section-subtitle">Rekapitulasi pengalaman proyek akademik dan pengembangan sistem.</p>
-        </div>
-
-        <!-- Tabel Semantik Lengkap sesuai Rubrik -->
-        <div class="table-wrapper card">
-          <table class="custom-table">
-            <caption>Rekapitulasi Pengalaman Proyek Perancangan & Development</caption>
-            <thead>
-              <tr>
-                <th scope="col">Nama Proyek</th>
-                <th scope="col">Peran / Deskripsi Ringkas</th>
-                <th scope="col">Teknologi / Tools</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row" class="project-name">ImmuniCare</th>
-                <td>UX Researcher & UI Designer – Riset pengguna & ideasi aplikasi pencatatan imunisasi anak.</td>
-                <td><span class="tag">Figma</span> <span class="tag">Maze (SUS Survey)</span> <span class="tag">Stitch AI</span></td>
-              </tr>
-              <tr>
-                <th scope="row" class="project-name">Sistem Asrama IT Del</th>
-                <td>Back-End Developer – Pengembangan sistem pelacak asrama dengan Java & SQL.</td>
-                <td><span class="tag">Java JDBC</span> <span class="tag">MySQL/XAMPP</span> <span class="tag">OOP</span></td>
-              </tr>
-              <tr>
-                <th scope="row" class="project-name">RS HKBP Balige System</th>
-                <td>System Analyst – Pemodelan arsitektur sistem dan alur data rumah sakit.</td>
-                <td><span class="tag">DFD (L1/L2)</span> <span class="tag">Use Case</span> <span class="tag">ERD</span></td>
-              </tr>
-              <tr>
-                <th scope="row" class="project-name">Canteen Info System</th>
-                <td>Project Manager – Manajemen workflow & papan Kanban proyek kantin digital.</td>
-                <td><span class="tag">Asana</span> <span class="tag">Agile/Scrum</span></td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <td colspan="3">Total Terdata: 4 Proyek Rekapitulasi Multidisiplin Perancangan Perangkat Lunak</td>
-              </tr>
-            </tfoot>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 3: GALERI KEAHLIAN TERSTRUKTUR -->
-    <section id="keahlian" class="section bg-light">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Galeri Keahlian Terstruktur</h2>
-          <p class="section-subtitle">Spesialisasi teknis, pemodelan sistem, dan perangkat kerja utama.</p>
-        </div>
-
-        <div class="skills-grid">
-          <div class="card skill-card">
-            <div class="skill-icon">💻</div>
-            <h3>Software Engineering & Programming</h3>
-            <ul class="skill-bullet">
-              <li><strong>Bahasa Pemrograman:</strong> Java (JDBC, Collections Framework), C (Memory Management), SQL.</li>
-              <li><strong>Database:</strong> MySQL (XAMPP), SQL Server (Triggers & Audit Logging).</li>
-            </ul>
-          </div>
-
-          <div class="card skill-card">
-            <div class="skill-icon">🎨</div>
-            <h3>System Analysis & Design</h3>
-            <ul class="skill-bullet">
-              <li><strong>Pemodelan Sistem:</strong> Use Case Diagram, Data Flow Diagram (DFD Level 1 & 2), ERD / Database Mapping.</li>
-              <li><strong>UI/UX Research & Prototyping:</strong> Figma, User Journey Mapping, Empathy Map, Maze (Usability Testing & SUS).</li>
-            </ul>
-          </div>
-
-          <div class="card skill-card">
-            <div class="skill-icon">⚙️</div>
-            <h3>Project Management & Tools</h3>
-            <ul class="skill-bullet">
-              <li><strong>Manajemen Proyek:</strong> Asana (Kanban Workflow).</li>
-              <li><strong>Lainnya:</strong> VS Code, Draw.io, Wireshark, Git/GitHub.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 4: FORMULIR LAYANAN (ACCESSIBLE WCAG 2.2) -->
-    <section id="layanan" class="section">
-      <div class="container form-max-width">
-        <div class="section-header">
-          <h2 class="section-title">Formulir Pemesanan Layanan / Konsultasi</h2>
-          <p class="section-subtitle">Silakan isi formulir di bawah ini untuk berdiskusi terkait proyek pengembangan web, analisis sistem, atau riset UI/UX.</p>
-        </div>
-
-        <form class="card custom-form" action="#" method="POST">
-          <fieldset class="form-fieldset">
-            <legend class="form-legend">1. Data Identitas Klien</legend>
-
-            <div class="form-group">
-              <label for="nama" class="form-label">Nama Lengkap <span class="req">*</span></label>
-              <input type="text" id="nama" name="nama" class="form-input" required placeholder="Contoh: Ananda Satria">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card card-custom h-100 p-4 border-0 shadow-sm">
+              <h3 class="h5 fw-bold text-primary mb-3 border-bottom pb-2">Identitas Akademik</h3>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><i class="bi bi-person-fill text-primary me-2"></i><strong>Nama Lengkap:</strong> Amelia Renata Lumbanbatu</li>
+                <li class="mb-2"><i class="bi bi-journal-bookmark-fill text-primary me-2"></i><strong>Program Studi:</strong> S1 Sistem Informasi (2024)</li>
+                <li class="mb-2"><i class="bi bi-building-fill text-primary me-2"></i><strong>Institusi:</strong> Institut Teknologi Del</li>
+                <li class="mb-0"><i class="bi bi-geo-alt-fill text-primary me-2"></i><strong>Lokasi:</strong> Sitoluama, Laguboti, Toba, Sumut</li>
+              </ul>
             </div>
+          </div>
 
-            <div class="form-group">
-              <label for="email" class="form-label">Email Aktif <span class="req">*</span></label>
-              <input type="email" id="email" name="email" class="form-input" required placeholder="nama@domain.com" aria-describedby="email-desc">
-              <small id="email-desc" class="form-help">Email digunakan untuk balasan rincian estimasi proyek.</small>
+          <div class="col-md-6">
+            <div class="card card-custom h-100 p-4 border-0 shadow-sm">
+              <h3 class="h5 fw-bold text-primary mb-3 border-bottom pb-2">Fokus & Minat Utama</h3>
+              <ol class="ps-3 mb-0">
+                <li class="mb-2">
+                  <strong>Software Engineering:</strong>
+                  <p class="text-muted small mb-0">Pengembangan aplikasi terstruktur menggunakan Java (JDBC, JCF) dan C (Memory Management).</p>
+                </li>
+                <li class="mb-2">
+                  <strong>Database Administration:</strong>
+                  <p class="text-muted small mb-0">Manajemen RDBMS MySQL (XAMPP) & SQL Server (Triggers, Stored Procedures, Audit Logging).</p>
+                </li>
+                <li class="mb-0">
+                  <strong>UI/UX Research & Design:</strong>
+                  <p class="text-muted small mb-0">Riset pengalaman pengguna, wireframing, prototyping, dan pengujian kuantitatif (Maze & SUS).</p>
+                </li>
+              </ol>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="form-row">
-              <div class="form-group">
-                <label for="telepon" class="form-label">Nomor WhatsApp <span class="req">*</span></label>
-                <input type="tel" id="telepon" name="telepon" class="form-input" required placeholder="081234567890">
+    <!-- SECTION 2: PORTOFOLIO PROYEK & MODAL -->
+    <section id="proyek" class="py-5">
+      <div class="container py-4">
+        <div class="text-center mx-auto mb-5" style="max-width: 650px;">
+          <h2 class="fw-bold">Portofolio Proyek & Kontribusi</h2>
+          <p class="text-muted">Kartu proyek interaktif berbasis Grid Bootstrap dengan detail Modal Dialog.</p>
+        </div>
+
+        <!-- Grid 4 Kartu Proyek -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+          
+          <!-- Kartu 1 -->
+          <div class="col">
+            <div class="card card-custom h-100 border-0 shadow-sm overflow-hidden">
+              <div class="p-3 bg-primary text-white d-flex align-items-center justify-content-between">
+                <i class="bi bi-shield-check fs-3"></i>
+                <span class="badge bg-light text-dark">UI/UX Research</span>
               </div>
-              <div class="form-group">
-                <label for="durasi" class="form-label">Estimasi Waktu (Hari)</label>
-                <input type="number" id="durasi" name="durasi" class="form-input" min="1" max="90" placeholder="7">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 fw-bold card-title">ImmuniCare</h3>
+                <p class="card-text text-muted small flex-grow-1">Aplikasi pencatatan dan pelacak imunisasi anak dengan pendekatan user-centered design.</p>
+                <div class="mb-3">
+                  <span class="badge bg-secondary">Figma</span>
+                  <span class="badge bg-secondary">Maze</span>
+                  <span class="badge bg-secondary">Stitch AI</span>
+                </div>
+                <button type="button" class="btn btn-outline-primary w-100 btn-sm rounded-2" data-bs-toggle="modal" data-bs-target="#modalImmunicare">
+                  Lihat Detail <i class="bi bi-arrow-right ms-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kartu 2 -->
+          <div class="col">
+            <div class="card card-custom h-100 border-0 shadow-sm overflow-hidden">
+              <div class="p-3 bg-success text-white d-flex align-items-center justify-content-between">
+                <i class="bi bi-house-door fs-3"></i>
+                <span class="badge bg-light text-dark">Backend Dev</span>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 fw-bold card-title">Sistem Asrama IT Del</h3>
+                <p class="card-text text-muted small flex-grow-1">Pengembangan sistem pelacak dan manajemen penghuni asrama berbasis Java & SQL.</p>
+                <div class="mb-3">
+                  <span class="badge bg-secondary">Java JDBC</span>
+                  <span class="badge bg-secondary">MySQL</span>
+                  <span class="badge bg-secondary">OOP</span>
+                </div>
+                <button type="button" class="btn btn-outline-primary w-100 btn-sm rounded-2" data-bs-toggle="modal" data-bs-target="#modalAsrama">
+                  Lihat Detail <i class="bi bi-arrow-right ms-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kartu 3 -->
+          <div class="col">
+            <div class="card card-custom h-100 border-0 shadow-sm overflow-hidden">
+              <div class="p-3 bg-info text-dark d-flex align-items-center justify-content-between">
+                <i class="bi bi-hospital fs-3"></i>
+                <span class="badge bg-dark text-white">System Analyst</span>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 fw-bold card-title">RS HKBP Balige System</h3>
+                <p class="card-text text-muted small flex-grow-1">Pemodelan arsitektur sistem informasi, DFD Level 1/2, dan perancangan ERD rumah sakit.</p>
+                <div class="mb-3">
+                  <span class="badge bg-secondary">DFD</span>
+                  <span class="badge bg-secondary">ERD</span>
+                  <span class="badge bg-secondary">Use Case</span>
+                </div>
+                <button type="button" class="btn btn-outline-primary w-100 btn-sm rounded-2" data-bs-toggle="modal" data-bs-target="#modalHKBP">
+                  Lihat Detail <i class="bi bi-arrow-right ms-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kartu 4 -->
+          <div class="col">
+            <div class="card card-custom h-100 border-0 shadow-sm overflow-hidden">
+              <div class="p-3 bg-warning text-dark d-flex align-items-center justify-content-between">
+                <i class="bi bi-shop fs-3"></i>
+                <span class="badge bg-dark text-white">Project Manager</span>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 fw-bold card-title">Canteen Info System</h3>
+                <p class="card-text text-muted small flex-grow-1">Pengelolaan alur kerja agile dan papan Kanban untuk pengembangan sistem kantin digital.</p>
+                <div class="mb-3">
+                  <span class="badge bg-secondary">Asana</span>
+                  <span class="badge bg-secondary">Agile/Scrum</span>
+                </div>
+                <button type="button" class="btn btn-outline-primary w-100 btn-sm rounded-2" data-bs-toggle="modal" data-bs-target="#modalCanteen">
+                  Lihat Detail <i class="bi bi-arrow-right ms-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL DETAIL PROYEK 1 -->
+    <div class="modal fade" id="modalImmunicare" tabindex="-1" aria-labelledby="modalImmunicareLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4 border-0">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title fw-bold" id="modalImmunicareLabel"><i class="bi bi-shield-check me-2"></i>ImmuniCare - UI/UX Research</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4">
+            <p><strong>Peran:</strong> UX Researcher & UI Designer</p>
+            <p class="text-muted">Proyek ini berfokus pada analisis kebutuhan ibu muda dalam memantau jadwal imunisasi anak. Menggunakan metode Empathy Map, User Journey, serta evaluasi kuantitatif System Usability Scale (SUS) via Maze.</p>
+            <ul class="list-group list-group-flush mb-3">
+              <li class="list-group-item px-0">✔ Wireframing & Prototyping interaktif di Figma</li>
+              <li class="list-group-item px-0">✔ Pengujian keterpakaian kuantitatif dengan SUS Score</li>
+              <li class="list-group-item px-0">✔ UI Generation berbasis Stitch AI</li>
+            </ul>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-secondary rounded-3" data-bs-dismiss="modal">Tutup</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL DETAIL PROYEK 2 -->
+    <div class="modal fade" id="modalAsrama" tabindex="-1" aria-labelledby="modalAsramaLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4 border-0">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title fw-bold" id="modalAsramaLabel"><i class="bi bi-house-door me-2"></i>Sistem Asrama IT Del</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4">
+            <p><strong>Peran:</strong> Back-End Developer</p>
+            <p class="text-muted">Aplikasi pelacak kamar dan data mahasiswa asrama berbasis Java. Menerapkan arsitektur Object-Oriented Programming (OOP), Data Mapper Pattern, dan konektivitas JDBC ke basis data MySQL.</p>
+            <ul class="list-group list-group-flush mb-3">
+              <li class="list-group-item px-0">✔ Integrasi Java Collections Framework & JDBC</li>
+              <li class="list-group-item px-0">✔ Penerapan Data Mapper Pattern</li>
+              <li class="list-group-item px-0">✔ Manajemen database MySQL via XAMPP</li>
+            </ul>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-secondary rounded-3" data-bs-dismiss="modal">Tutup</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL DETAIL PROYEK 3 -->
+    <div class="modal fade" id="modalHKBP" tabindex="-1" aria-labelledby="modalHKBPLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4 border-0">
+          <div class="modal-header bg-info text-dark">
+            <h5 class="modal-title fw-bold" id="modalHKBPLabel"><i class="bi bi-hospital me-2"></i>RS HKBP Balige System</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4">
+            <p><strong>Peran:</strong> System Analyst</p>
+            <p class="text-muted">Merancang arsitektur sistem informasi medis dan operasional rumah sakit. Menghasilkan pemodelan DFD Level 1 & 2, skenario Use Case, serta perancangan Entity-Relationship Diagram (ERD).</p>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-secondary rounded-3" data-bs-dismiss="modal">Tutup</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL DETAIL PROYEK 4 -->
+    <div class="modal fade" id="modalCanteen" tabindex="-1" aria-labelledby="modalCanteenLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4 border-0">
+          <div class="modal-header bg-warning text-dark">
+            <h5 class="modal-title fw-bold" id="modalCanteenLabel"><i class="bi bi-shop me-2"></i>Canteen Info System</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4">
+            <p><strong>Peran:</strong> Project Manager</p>
+            <p class="text-muted">Mengatur alur kerja tim dalam pengembangan portal kantin digital kampus menggunakan papan Kanban Asana dan prinsip Agile/Scrum.</p>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-secondary rounded-3" data-bs-dismiss="modal">Tutup</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 3: GALERI KEAHLIAN -->
+    <section id="keahlian" class="py-5 bg-light">
+      <div class="container py-4">
+        <div class="text-center mx-auto mb-5" style="max-width: 650px;">
+          <h2 class="fw-bold">Galeri Keahlian Terstruktur</h2>
+          <p class="text-muted">Spesialisasi teknis, pemodelan sistem, dan perangkat kerja utama.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card card-custom h-100 p-4 border-0 shadow-sm text-center">
+              <div class="fs-1 text-primary mb-3"><i class="bi bi-code-slash"></i></div>
+              <h3 class="h5 fw-bold mb-3">Software Engineering</h3>
+              <ul class="list-unstyled text-muted small text-start mb-0">
+                <li class="mb-2"><strong>Bahasa:</strong> Java (JDBC, JCF), C (Memory Management), SQL</li>
+                <li class="mb-0"><strong>Database:</strong> MySQL (XAMPP), SQL Server (Triggers & Audit)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card card-custom h-100 p-4 border-0 shadow-sm text-center">
+              <div class="fs-1 text-primary mb-3"><i class="bi bi-palette"></i></div>
+              <h3 class="h5 fw-bold mb-3">System Analysis & UI/UX</h3>
+              <ul class="list-unstyled text-muted small text-start mb-0">
+                <li class="mb-2"><strong>Pemodelan:</strong> Use Case, DFD Level 1 & 2, ERD</li>
+                <li class="mb-0"><strong>UI/UX:</strong> Figma, Journey Map, Maze (SUS Testing)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card card-custom h-100 p-4 border-0 shadow-sm text-center">
+              <div class="fs-1 text-primary mb-3"><i class="bi bi-kanban"></i></div>
+              <h3 class="h5 fw-bold mb-3">Project Management</h3>
+              <ul class="list-unstyled text-muted small text-start mb-0">
+                <li class="mb-2"><strong>Manajemen:</strong> Asana (Kanban Workflow)</li>
+                <li class="mb-0"><strong>Tools:</strong> VS Code, Draw.io, Wireshark, Git/GitHub</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: FORMULIR LAYANAN (MODERN BOOTSTRAP 5) -->
+    <section id="layanan" class="py-5">
+      <div class="container py-4" style="max-width: 760px;">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Formulir Pemesanan Layanan / Konsultasi</h2>
+          <p class="text-muted">Silakan isi formulir di bawah ini untuk berdiskusi terkait proyek pengembangan web, analisis sistem, atau riset UI/UX.</p>
+        </div>
+
+        <form class="card card-custom p-4 p-md-5 border-0 shadow-lg needs-validation" novalidate action="#" method="POST">
+          
+          <fieldset class="border rounded-3 p-3 p-md-4 mb-4">
+            <legend class="float-none w-auto px-2 fs-6 fw-bold text-primary"><i class="bi bi-person-vcard me-2"></i>1. Data Identitas Klien</legend>
+
+            <!-- Floating Label Nama -->
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingNama" placeholder="Nama Lengkap" required>
+              <label for="floatingNama"><i class="bi bi-person me-1"></i> Nama Lengkap *</label>
+              <div class="invalid-feedback">Nama lengkap wajib diisi.</div>
+            </div>
+
+            <!-- Floating Label Email dengan Input Group -->
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingEmail" placeholder="nama@del.ac.id" required>
+              <label for="floatingEmail"><i class="bi bi-envelope me-1"></i> Alamat Email Resmi *</label>
+              <div class="invalid-feedback">Alamat email valid wajib disertakan.</div>
+            </div>
+
+            <div class="row g-3">
+              <div class="col-md-6">
+                <!-- Input Group Telepon -->
+                <div class="input-group mb-3">
+                  <span class="input-group-text"><i class="bi bi-whatsapp"></i></span>
+                  <div class="form-floating flex-grow-1">
+                    <input type="tel" class="form-control" id="floatingPhone" placeholder="08123456789" required>
+                    <label for="floatingPhone">Nomor WhatsApp *</label>
+                    <div class="invalid-feedback">Nomor WhatsApp wajib diisi.</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <!-- Floating Label Durasi -->
+                <div class="form-floating mb-3">
+                  <input type="number" class="form-control" id="floatingDurasi" placeholder="7" min="1" max="90">
+                  <label for="floatingDurasi"><i class="bi bi-clock me-1"></i> Estimasi Waktu (Hari)</label>
+                </div>
               </div>
             </div>
           </fieldset>
 
-          <fieldset class="form-fieldset">
-            <legend class="form-legend">2. Detail Layanan & Permintaan</legend>
+          <fieldset class="border rounded-3 p-3 p-md-4 mb-4">
+            <legend class="float-none w-auto px-2 fs-6 fw-bold text-primary"><i class="bi bi-briefcase me-2"></i>2. Detail Layanan & Permintaan</legend>
 
-            <div class="form-group">
-              <label for="kategori" class="form-label">Kategori Layanan Utama</label>
-              <select id="kategori" name="kategori" class="form-input">
-                <option value="uiux">UI/UX Research & Wireframing (Figma/Maze)</option>
+            <!-- Select Kategori -->
+            <div class="form-floating mb-3">
+              <select class="form-select" id="floatingSelectCategory" aria-label="Kategori Layanan">
+                <option value="uiux" selected>UI/UX Research & Wireframing (Figma/Maze)</option>
                 <option value="backend">Software Engineering & Database (Java/SQL)</option>
                 <option value="analysis">System Analysis & Architectural Modeling (DFD/ERD)</option>
                 <option value="pm">Project Management Setup (Asana/Kanban)</option>
               </select>
+              <label for="floatingSelectCategory">Kategori Layanan Utama</label>
             </div>
 
-            <div class="form-group">
-              <span class="form-label">Skema Kolaborasi <span class="req">*</span></span>
-              <div class="radio-inline">
-                <label class="radio-item">
-                  <input type="radio" name="kolaborasi" value="individu" checked>
-                  Konsultasi / Perorangan
-                </label>
-                <label class="radio-item">
-                  <input type="radio" name="kolaborasi" value="tim">
-                  Proyek Tim / Perusahaan
-                </label>
+            <!-- Radio Button Kolaborasi -->
+            <div class="mb-3">
+              <label class="form-label d-block fw-semibold">Skema Kolaborasi *</label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="kolaborasi" id="radio1" value="individu" checked>
+                <label class="form-check-label" for="radio1">Konsultasi / Perorangan</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="kolaborasi" id="radio2" value="tim">
+                <label class="form-check-label" for="radio2">Proyek Tim / Perusahaan</label>
               </div>
             </div>
 
-            <div class="form-group">
-              <label for="pesan" class="form-label">Deskripsi Permintaan <span class="req">*</span></label>
-              <textarea id="pesan" name="pesan" class="form-input" rows="4" required placeholder="Jelaskan kebutuhan proyek atau topik diskusi Anda secara spesifik..."></textarea>
+            <!-- Floating Label Textarea -->
+            <div class="form-floating mb-3">
+              <textarea class="form-control" id="floatingPesan" placeholder="Deskripsi permintaan" style="height: 120px" required></textarea>
+              <label for="floatingPesan">Deskripsi Permintaan *</label>
+              <div class="invalid-feedback">Silakan jelaskan detail kebutuhan Anda.</div>
             </div>
 
-            <div class="form-group">
-              <label class="checkbox-item">
-                <input type="checkbox" name="persetujuan" required>
-                Saya menyatakan bahwa data yang diisikan adalah benar untuk kontak tindak lanjut. <span class="req">*</span>
+            <!-- Checkbox Syarat -->
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" id="checkSyarat" required>
+              <label class="form-check-label small text-muted" for="checkSyarat">
+                Saya menyatakan bahwa data yang diisikan adalah benar untuk kontak tindak lanjut. *
               </label>
+              <div class="invalid-feedback">Anda harus menyetujui syarat ini sebelum mengirimkan.</div>
             </div>
           </fieldset>
 
-          <button type="submit" class="btn btn-primary btn-full">Kirim Permintaan Konsultasi</button>
+          <button type="submit" class="btn btn-primary btn-lg w-100 rounded-3 shadow-sm">Kirim Permintaan Konsultasi</button>
         </form>
       </div>
     </section>
   </main>
 
   <!-- ASIDE BANNER -->
-  <aside class="aside-banner">
-    <div class="container aside-container">
+  <aside class="bg-primary text-white py-5">
+    <div class="container text-center text-md-start d-md-flex align-items-center justify-content-between gap-3">
       <div>
-        <h3>Tertarik Mengajak Kolaborasi Proyek Perangkat Lunak?</h3>
-        <p>Terbuka untuk diskusi proyek akademis, perancangan basis data, maupun riset UI/UX.</p>
+        <h3 class="fw-bold h4 mb-1">Tertarik Mengajak Kolaborasi Proyek Perangkat Lunak?</h3>
+        <p class="mb-0 text-white-50">Terbuka untuk diskusi proyek akademis, perancangan basis data, maupun riset UI/UX.</p>
       </div>
-      <a href="https://www.linkedin.com/in/amelia-renata-lumbanbatu-867936364" target="_blank" rel="noopener noreferrer" class="btn btn-light">
+      <a href="https://www.linkedin.com/in/amelia-renata-lumbanbatu-867936364" target="_blank" rel="noopener noreferrer" class="btn btn-light text-primary fw-bold rounded-3 px-4 mt-3 mt-md-0">
         Hubungi via LinkedIn
       </a>
     </div>
   </aside>
 
   <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-container">
-      <p>&copy; 2026 Amelia Renata Lumbanbatu. All rights reserved.</p>
-      <p class="footer-sub">Tugas Mandiri Praktikum Pemrograman & Pengujian Aplikasi Web • S1 Sistem Informasi IT Del</p>
+  <footer class="bg-dark text-white-50 py-4 text-center small">
+    <div class="container">
+      <p class="mb-1">&copy; 2026 Amelia Renata Lumbanbatu. All rights reserved.</p>
+      <p class="mb-0 text-muted">Tugas Mandiri Praktikum Pemrograman & Pengujian Aplikasi Web • S1 Sistem Informasi IT Del</p>
     </div>
   </footer>
 
+  <!-- Bootstrap 5.3.3 JS Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script Kustom Validasi Form -->
+  <script>
+    (() => {
+      'use strict'
+      const forms = document.querySelectorAll('.needs-validation')
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+  </script>
 </body>
 </html>
