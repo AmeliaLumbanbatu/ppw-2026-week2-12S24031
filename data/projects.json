@@ -1,0 +1,42 @@
+[
+  {
+    "id": "proj-1",
+    "title": "Smartcare-Logistic",
+    "category": "Software Engineering",
+    "description": "Pengembangan sistem optimasi rute logistik cerdas menggunakan algoritma pencarian A* dan Uninformed Cost Search (UCS) berbasis Python.",
+    "thumbnail": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&auto=format&fit=crop",
+    "tags": ["Python", "Artificial Intelligence", "Algorithm"],
+    "metrics": "A* & UCS Route Optimization",
+    "link": "https://github.com/AmeliaLumbanbatu"
+  },
+  {
+    "id": "proj-2",
+    "title": "Sistem Manajemen Asrama",
+    "category": "Database Administration",
+    "description": "Aplikasi pelacakan dan pengelolaan asrama berbasis Java menggunakan JDBC, Java Collection Framework, dan pola arsitektur Data Mapper.",
+    "thumbnail": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&auto=format&fit=crop",
+    "tags": ["Java", "JDBC", "MySQL", "Data Mapper"],
+    "metrics": "Relational DB Architecture",
+    "link": "https://github.com/AmeliaLumbanbatu"
+  },
+  {
+    "id": "proj-3",
+    "title": "ImmuniCare Child Tracking App",
+    "category": "UI/UX Research & Design",
+    "description": "Perancangan prototipe aplikasi mobile dan dashboard admin untuk pelacakan imunisasi anak beserta skenario uji usabilitas pada platform Maze.",
+    "thumbnail": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&auto=format&fit=crop",
+    "tags": ["Figma", "UI/UX", "Usability Testing", "Wireframing"],
+    "metrics": "High-Fidelity Prototype & Maze Test",
+    "link": "https://github.com/AmeliaLumbanbatu"
+  },
+  {
+    "id": "proj-4",
+    "title": "CenderaMatak E-Commerce Portal",
+    "category": "UI/UX Research & Design",
+    "description": "Desain sistem hubungan pelanggan (CRM) dan UI style guide untuk platform kerajinan budaya dan suvenir khas Batak.",
+    "thumbnail": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format&fit=crop",
+    "tags": ["Figma", "Style Guide", "Customer Journey"],
+    "metrics": "Batak Cultural Craft Portal",
+    "link": "https://github.com/AmeliaLumbanbatu"
+  }
+]

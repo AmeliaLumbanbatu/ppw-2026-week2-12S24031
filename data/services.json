@@ -1,0 +1,38 @@
+[
+  {
+    "id": "srv-1",
+    "name": "Software Engineering & System Scripting",
+    "price": "Konsultasi / Proyek",
+    "description": "Pengembangan logika aplikasi backend Java, OOP, algoritma Python, dan otomatisasi skrip sistem.",
+    "features": [
+      "Pengembangan Kode Berbasis Java / Python",
+      "Penerapan Object-Oriented Programming (OOP)",
+      "Implementasi Algoritma dan Struktur Data",
+      "Refactoring & Code Review"
+    ]
+  },
+  {
+    "id": "srv-2",
+    "name": "Database Design & Optimization",
+    "price": "Konsultasi / Proyek",
+    "description": "Perancangan arsitektur basis data relasional, pembuatan ERD, Data Dictionary, dan penulisan kueri SQL/Trigger.",
+    "features": [
+      "Pemodelan ERD & Normalisasi Basis Data",
+      "Pembuatan Kueri SQL, Trigger & Stored Procedure",
+      "Konektivitas Database via JDBC",
+      "Penyusunan Data Dictionary & Skema"
+    ]
+  },
+  {
+    "id": "srv-3",
+    "name": "UI/UX Research & Prototype Design",
+    "price": "Konsultasi / Proyek",
+    "description": "Perancangan antarmuka pengguna (UI) modern, penyusunan wireframe, user flow, style guide, dan prototipe interaktif.",
+    "features": [
+      "Wireframing & High-Fidelity Design di Figma",
+      "Penyusunan UI Style Guide & Component Library",
+      "User Flow & Interactive Prototyping",
+      "Usability Testing Scenario & Analysis"
+    ]
+  }
+]
